@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop - Velrion Mart</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+/* ================= SHOP PRODUCTS ================= */
+
+.shop-title{
+text-align:center;
+padding:25px 0;
+font-size:26px;
+font-weight:700;
+}
+
+.products-grid{
+max-width:1300px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+padding:20px;
+}
+
+.product-card{
+border:1px solid #e5e5e5;
+background:#fff;
+padding:15px;
+text-align:center;
+transition:0.3s;
+border-radius:0;
+}
+
+.product-card:hover{
+border-color:#111;
+transform:translateY(-2px);
+}
+
+.product-card img{
+width:100%;
+height:230px;
+object-fit:cover;
+border:1px solid #e5e5e5;
+}
+
+.product-card h3{
+font-size:15px;
+margin:10px 0;
+font-weight:600;
+}
+
+.sale-price{
+font-size:16px;
+font-weight:bold;
+}
+
+.old-price{
+font-size:13px;
+color:#888;
+text-decoration:line-through;
+}
+
+.discount{
+color:green;
+font-size:13px;
+margin-bottom:10px;
+}
+
+/* BUTTONS */
+
+.btn{
+display:block;
+width:100%;
+padding:10px;
+margin-top:8px;
+font-size:12px;
+font-weight:600;
+border:1px solid #111;
+cursor:pointer;
+transition:0.3s;
+}
+
+.btn.view{
+background:#fff;
+color:#111;
+}
+
+.btn.cart{
+background:#111;
+color:#fff;
+}
+
+.btn.cart:hover{
+background:#333;
+}
+
+.btn.view:hover{
+background:#f2f2f2;
+}
+
+/* CATEGORY FILTER */
+
+.filter-bar{
+text-align:center;
+margin:15px 0;
+}
+
+.filter-bar button{
+margin:5px;
+padding:8px 12px;
+border:1px solid #111;
+background:#fff;
+cursor:pointer;
+font-size:12px;
+}
+
+.filter-bar button.active{
+background:#111;
+color:#fff;
+}
+
+</style>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Velrion Mart</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+
+<nav class="top-nav">
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="tracking.html">Track order</a>
+<a href="contact.html">Contact</a>
+<a href="login.html">Login/sign up</a>
+</nav>
+
+</div>
+
+<!-- HEADER -->
+
+<header class="main-header">
+
+
+<div class="logo-area">
+
+    <img src="images/logo.png" alt="Velrion Mart Logo">
+
+    <div class="brand-name">
+        <span class="velrion">VELRION</span>
+        <span class="mart">MART</span>
+    </div>
+
+</div>
+
+<div class="header-links">
+<a href="#">Categories ▼</a>
+<a href="#">Brands ▼</a>
+</div>
+
+<div class="search-box">
+
+<img src="images/search icon.png" class="search-icon" alt="Search">
+
+<input type="text" placeholder="Search for Products, Brands, Categories">
+
+</div>
+
+<div class="header-icons">
+
+  <a href="notification.html">
+    <img src="images/notification-icon.png" alt="Notification">
+  </a>
+
+  <a href="wishlist.html">
+    <img src="images/heart-icon.png" alt="Wishlist">
+  </a>
+
+  <a href="cart.html">
+    <img src="images/cart-icon.png" alt="Cart">
+  </a>
+
+</div>
+
+</header>
+
+<section class="home-category-section">
+
+    <h2>SHOP BY CATEGORY</h2>
+
+    <div class="home-categories">
+
+        <a href="#" onclick="filterProducts('car')" class="category-card">
+            Car Accessories
+        </a>
+
+        <a href="#" onclick="filterProducts('home')" class="category-card">
+            Home & Kitchen
+        </a>
+
+        <a href="#" onclick="filterProducts('gadgets')" class="category-card">
+            Gadgets
+        </a>
+
+        <a href="#" onclick="filterProducts('mobile')" class="category-card">
+            Mobile Acc.
+        </a>
+
+        <a href="#" onclick="filterProducts('fitness')" class="category-card">
+            Fitness
+        </a>
+
+        <a href="#" onclick="filterProducts('all')" class="category-card">
+            More Products
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- PRODUCTS TITLE -->
+<section class="featured-products">
+    <h2>OUR PRODUCTS</h2>
+</section>
+
+
+<!-- PRODUCTS GRID -->
+<div class="products-grid">
+
+<!-- PRODUCT 1 -->
+<div class="product-card car">
+<img src="images/car-back-seat-organizer-1.jpg">
+<h3>Car Back Seat Organizer</h3>
+<p class="sale-price">₹699</p>
+<p class="old-price">₹999</p>
+<p class="discount">30% OFF</p>
+
+<button class="btn view">View Product</button>
+<button class="btn cart" onclick="addToCart('Car Back Seat Organizer',699)">Add to Cart</button>
+</div>
+
+<!-- PRODUCT 2 -->
+<div class="product-card car">
+<img src="images/car-seat-gap-filler-1.jpg">
+<h3>Car Seat Gap Filler</h3>
+<p class="sale-price">₹599</p>
+<p class="old-price">₹799</p>
+<p class="discount">25% OFF</p>
+
+<button class="btn view">View Product</button>
+<button class="btn cart" onclick="addToCart('Car Seat Gap Filler',599)">Add to Cart</button>
+</div>
+
+<!-- PRODUCT 3 -->
+<div class="product-card home">
+<img src="images/foldable-laptop-stand-1.jpg">
+<h3>Foldable Storage Box</h3>
+<p class="sale-price">₹499</p>
+<p class="old-price">₹699</p>
+<p class="discount">29% OFF</p>
+
+<button class="btn view">View Product</button>
+<button class="btn cart" onclick="addToCart('Storage Box',499)">Add to Cart</button>
+</div>
+
+<!-- PRODUCT 4 -->
+<div class="product-card gadgets">
+<img src="images/automatic-soap-dispenser-1.jpg">
+<h3>Automatic Soap Dispenser</h3>
+<p class="sale-price">₹849</p>
+<p class="old-price">₹1199</p>
+<p class="discount">29% OFF</p>
+
+<button class="btn view">View Product</button>
+<button class="btn cart" onclick="addToCart('Soap Dispenser',849)">Add to Cart</button>
+</div>
+
+<!-- PRODUCT 5 -->
+<div class="product-card gadgets">
+<img src="images/foldable-laptop-stand-1.jpg">
+<h3>Foldable Laptop Stand</h3>
+<p class="sale-price">₹649</p>
+<p class="old-price">₹899</p>
+<p class="discount">28% OFF</p>
+
+<button class="btn view">View Product</button>
+<button class="btn cart" onclick="addToCart('Laptop Stand',649)">Add to Cart</button>
+</div>
+
+<!-- PRODUCT 6 -->
+<div class="product-card car">
+<img src="images/product-image-6.jpg">
+<h3>TravelAssist Organizer</h3>
+<p class="sale-price">₹849</p>
+<p class="old-price">₹1199</p>
+<p class="discount">35% OFF</p>
+
+<button class="btn view">View Product</button>
+<button class="btn cart" onclick="addToCart('TravelAssist',849)">Add to Cart</button>
+</div>
+
+<!-- PRODUCT 7 -->
+<div class="product-card car">
+<img src="images/car-phone-holder-1.jpg">
+<h3>Car Phone Holder</h3>
+<p class="sale-price">₹349</p>
+<p class="old-price">₹499</p>
+<p class="discount">30% OFF</p>
+
+<button class="btn view">View Product</button>
+<button class="btn cart" onclick="addToCart('Phone Holder',349)">Add to Cart</button>
+</div>
+
+<!-- PRODUCT 8 -->
+<div class="product-card car">
+<img src="images/car-vacuum-cleaner-1.jpg">
+<h3>Car Vacuum Cleaner</h3>
+<p class="sale-price">₹1299</p>
+<p class="old-price">₹1899</p>
+<p class="discount">32% OFF</p>
+
+<button class="btn view">View Product</button>
+<button class="btn cart" onclick="addToCart('Vacuum Cleaner',1299)">Add to Cart</button>
+</div>
+
+<!-- PRODUCT 9 -->
+<div class="product-card home">
+<img src="images/neck-pillow-1.jpg">
+<h3>Neck Pillow</h3>
+<p class="sale-price">₹449</p>
+<p class="old-price">₹599</p>
+<p class="discount">25% OFF</p>
+
+<button class="btn view">View Product</button>
+<button class="btn cart" onclick="addToCart('Neck Pillow',449)">Add to Cart</button>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>COMPANY</h3>
+<a href="about.html">About Us</a>
+<a href="#">Media</a>
+<a href="contact.html">Contact Us</a>
+</div>
+
+<div>
+<h3>POLICIES</h3>
+<a href="refund-policy.html">Cancellation, Return & Refund Policy</a>
+<a href="terms.html">T&C of Sale</a>
+<a href="#">FAQ's</a>
+<a href="#">Fees & Payments Policy</a>
+<a href="privacy-policy.html">Privacy Policy</a>
+<a href="#">Terms of Use</a>
+</div>
+
+<div>
+<h3>INFORMATION</h3>
+<a href="tracking.html">Track Order</a>
+<a href="#">Bulk Purchase Enquiry</a>
+</div>
+
+<div>
+<h3>HAVE A QUESTION?</h3>
+
+<input type="text" placeholder="Enter your question">
+
+<button>Proceed</button>
+
+<div class="social-icons">
+
+<a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+
+<a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+
+<a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<div>
+© 2026 Velrion Mart | All Rights Reserved
+</div>
+
+<div class="payment-icons">
+
+<img src="images/ssl-secure.png" alt="SSL Secure">
+
+<img src="images/secure-payment.png" alt="Secure Payment">
+
+<img src="images/payment-methods.png" alt="Payment Methods">
+
+</div>
+
+</div>
+
+</footer>
+
+<!-- WHATSAPP BUTTON -->
+
+<a href="https://wa.me/919527649838" class="whatsapp-btn">
+
+    WhatsApp
+
+</a>
+
+
+<!-- CART SCRIPT -->
+<script>
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+function addToCart(name, price){
+cart.push({name, price});
+localStorage.setItem("cart", JSON.stringify(cart));
+alert(name + " added to cart!");
+}
+
+// FILTER SYSTEM
+function filterProducts(category){
+let items = document.querySelectorAll(".product-card");
+
+items.forEach(item=>{
+if(category === "all"){
+item.style.display = "block";
+}
+else{
+if(item.classList.contains(category)){
+item.style.display = "block";
+}else{
+item.style.display = "none";
+}
+}
+});
+}
+
+</script>
+
+</body>
+</html>
