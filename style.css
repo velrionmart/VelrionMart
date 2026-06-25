@@ -659,8 +659,6 @@ grid-template-columns:1fr;
 text-align:center;
 }
 
-}
-
 @media (max-width:480px){
 
 .hero-slider{
@@ -685,97 +683,3 @@ font-size:16px;
 font-size:11px;
 }
 
-/* =========================
-   SIDEBAR
-========================= */
-
-.mobile-sidebar{
-position:fixed;
-top:0;
-left:-100%;
-width:85%;
-max-width:360px;
-height:100vh;
-background:#ffffff;
-z-index:9999;
-overflow-y:auto;
-transition:0.35s;
-padding:20px;
-box-shadow:0 0 20px rgba(0,0,0,0.15);
-}
-
-.mobile-sidebar.active{
-left:0;
-}
-
-.menu-overlay{
-position:fixed;
-inset:0;
-background:rgba(0,0,0,0.4);
-display:none;
-z-index:9998;
-}
-
-.menu-overlay.active{
-display:block;
-}
-
-.close-menu{
-font-size:30px;
-cursor:pointer;
-margin-bottom:25px;
-}
-
-.menu-user{
-display:flex;
-gap:15px;
-align-items:center;
-margin-bottom:25px;
-}
-
-.menu-user img{
-width:70px;
-height:70px;
-border-radius:50%;
-border:2px solid orange;
-}
-
-.menu-user h3{
-margin-bottom:4px;
-}
-
-.login-btn{
-display:inline-block;
-margin-top:10px;
-padding:10px 18px;
-border:1px solid orange;
-border-radius:25px;
-color:orange;
-font-weight:600;
-}
-
-.menu-links a{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:16px 0;
-border-bottom:1px solid #eeeeee;
-font-size:18px;
-}
-
-.menu-promise{
-margin-top:30px;
-text-align:center;
-}
-
-.menu-promise h4{
-color:orange;
-margin-bottom:15px;
-}
-
-.promise-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:10px;
-font-size:14px;
-}
