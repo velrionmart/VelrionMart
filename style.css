@@ -542,9 +542,8 @@ align-items:center;
 }
 
 .mobile-menu{
-font-size:28px;
+font-size:32px;
 color:#ffffff;
-cursor:pointer;
 }
 
 .mobile-logo{
@@ -611,7 +610,6 @@ background:none;
    RESPONSIVE
 ========================= */
 
-/* TABLET */
 @media (max-width:992px){
 
 .products-grid{
@@ -628,6 +626,63 @@ grid-template-columns:repeat(2,1fr);
 
 .hero-slider{
 height:400px;
+}
+
+}
+
+@media (max-width:768px){
+
+.top-bar,
+.main-header{
+display:none;
+}
+
+.mobile-header{
+display:block;
+}
+
+.hero-slider{
+width:95%;
+height:300px;
+}
+
+.products-grid{
+grid-template-columns:1fr;
+}
+
+.home-categories{
+grid-template-columns:1fr;
+}
+
+.footer-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+}
+
+@media (max-width:480px){
+
+.hero-slider{
+height:250px;
+}
+
+.home-category-section h2,
+.featured-products h2,
+.faq-section h2{
+font-size:20px;
+}
+
+.product-card img{
+height:220px;
+}
+
+.mobile-brand .velrion{
+font-size:16px;
+}
+
+.mobile-brand .mart{
+font-size:11px;
 }
 
 }
