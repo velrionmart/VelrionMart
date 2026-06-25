@@ -508,7 +508,6 @@ text-align:center;
 justify-content:center;
 }
 
-}
 /* =========================
    WHATSAPP BUTTON
 ========================= */
@@ -527,14 +526,91 @@ z-index:999;
 }
 
 /* =========================
-   MOBILE
+   MOBILE HEADER
 ========================= */
 
-@media(max-width:992px){
-
-.main-header{
-padding:0 20px;
+.mobile-header{
+display:none;
+background:#000000;
+padding:12px;
 }
+
+.mobile-top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.mobile-menu{
+font-size:32px;
+color:#ffffff;
+}
+
+.mobile-logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.mobile-logo img{
+width:42px;
+height:42px;
+object-fit:contain;
+}
+
+.mobile-brand{
+display:flex;
+flex-direction:column;
+line-height:1;
+}
+
+.mobile-brand .velrion{
+font-size:18px;
+font-weight:700;
+color:#ffffff;
+}
+
+.mobile-brand .mart{
+font-size:12px;
+color:#ffffff;
+text-align:center;
+}
+
+.mobile-cart img{
+width:28px;
+height:28px;
+object-fit:contain;
+}
+
+.mobile-search{
+margin-top:12px;
+height:48px;
+background:#ffffff;
+border-radius:8px;
+display:flex;
+align-items:center;
+padding:0 12px;
+}
+
+.mobile-search img{
+width:22px;
+height:22px;
+margin-right:10px;
+}
+
+.mobile-search input{
+width:100%;
+border:none;
+outline:none;
+font-size:14px;
+background:none;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width:992px){
 
 .products-grid{
 grid-template-columns:repeat(2,1fr);
@@ -554,7 +630,7 @@ height:400px;
 
 }
 
-@media(max-width:768px){
+@media (max-width:768px){
 
 .top-bar,
 .main-header{
@@ -585,7 +661,7 @@ text-align:center;
 
 }
 
-@media(max-width:480px){
+@media (max-width:480px){
 
 .hero-slider{
 height:250px;
@@ -601,74 +677,12 @@ font-size:20px;
 height:220px;
 }
 
+.mobile-brand .velrion{
+font-size:16px;
 }
 
-/* =========================
-   MOBILE HEADER
-========================= */
-
-.mobile-header{
-display:none;
-background:#000000;
-padding:12px;
+.mobile-brand .mart{
+font-size:11px;
 }
 
-.mobile-top{
-display:flex;
-justify-content:space-between;
-align-items:center;
-}
-
-.mobile-menu{
-font-size:34px;
-color:#ffffff;
-}
-
-.mobile-logo{
-display:flex;
-align-items:center;
-gap:10px;
-}
-
-.mobile-logo img{
-width:42px;
-height:42px;
-object-fit:contain;
-}
-
-.mobile-brand{
-display:flex;
-align-items:center;
-gap:5px;
-}
-
-.mobile-cart img{
-width:30px;
-height:30px;
-object-fit:contain;
-}
-
-.mobile-search{
-margin-top:12px;
-height:50px;
-background:#ffffff;
-border-radius:8px;
-display:flex;
-align-items:center;
-padding:0 12px;
-}
-
-.mobile-search img{
-width:28px;
-height:28px;
-margin-right:10px;
-object-fit:contain;
-}
-
-.mobile-search input{
-width:100%;
-border:none;
-outline:none;
-font-size:15px;
-background:none;
 }
