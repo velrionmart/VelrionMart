@@ -594,4 +594,29 @@ font-size:16px;
 font-size:11px;
 }
 
+/* =========================
+   MOBILE ICON FIX 
+========================= */
+
+@media(max-width:768px){
+
+.header-icons img{
+width:20px;
+height:20px;
+}
+
+.search-icon{
+width:20px;
+height:20px;
+}
+
+.mobile-logo img{
+width:34px;
+height:34px;
+}
+
+.mobile-menu{
+font-size:26px;
+}
+
 }
