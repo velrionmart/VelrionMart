@@ -490,7 +490,7 @@ height:22px;
 
 
 /* =========================
-   MOBILE HEADER FINAL FIX
+   MOBILE HEADER 
 ========================= */
 
 @media(max-width:768px){
@@ -629,29 +629,78 @@ font-size:16px;
 font-size:11px;
 }
 
+}
+
+   
 /* =========================
    MOBILE ICON FIX 
 ========================= */
 
 @media(max-width:768px){
 
-.header-icons img{
-width:20px;
-height:20px;
+.mobile-header{
+padding:8px 10px;
 }
 
-.search-icon{
-width:20px;
-height:20px;
-}
-
-.mobile-logo img{
-width:34px;
-height:34px;
+.mobile-top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:10px;
 }
 
 .mobile-menu{
-font-size:26px;
+font-size:24px;
+line-height:1;
+}
+
+.mobile-logo img{
+width:32px;
+height:32px;
+}
+
+.mobile-brand .velrion{
+font-size:15px;
+}
+
+.mobile-brand .mart{
+font-size:10px;
+}
+
+.mobile-cart img{
+width:22px;
+height:22px;
+}
+
+.mobile-search{
+margin-top:8px;
+height:40px;
+padding:6px 10px;
+}
+
+.mobile-search img{
+width:18px;
+height:18px;
+}
+
+.mobile-search input{
+font-size:13px;
 }
 
 }
+
+
+/* =========================
+   FORCE MOBILE HEADER ONLY ON MOBILE
+========================= */
+
+.mobile-header{
+display:none;
+}
+
+@media(max-width:768px){
+.mobile-header{
+display:block;
+}
+}
+   
