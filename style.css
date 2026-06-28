@@ -526,44 +526,146 @@ border:1px solid #25D366;
 z-index:999;
 }
 
-/* =========================
-   MOBILE RESPONSIVE FIX
-========================= */
+/* =====================================
+   MOBILE + RESPONSIVE
+===================================== */
 
+/* Desktop */
+.mobile-header{
+display:none;
+}
+
+/* Tablet */
+@media (max-width:992px){
+
+.hero-slider{
+height:420px;
+}
+
+.products-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.home-categories{
+grid-template-columns:repeat(2,1fr);
+}
+
+.footer-grid{
+grid-template-columns:repeat(2,1fr);
+gap:35px;
+}
+
+}
+
+/* Mobile */
 @media (max-width:768px){
 
-/* Desktop header hide */
+/* Desktop Header Hide */
 .top-bar,
 .main-header{
 display:none;
 }
 
-/* Mobile Header */
+/* Mobile Header Show */
 .mobile-header{
 display:block;
-background:#111;
-padding:10px 12px;
+background:#111111;
+padding:12px 15px;
+border-bottom:1px solid #2b2b2b;
 }
 
-/* HERO */
+.mobile-top{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.mobile-menu img{
+width:30px;
+height:30px;
+display:block;
+}
+
+.mobile-logo{
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+.mobile-logo img{
+width:38px;
+height:38px;
+}
+
+.mobile-brand{
+display:flex;
+flex-direction:column;
+line-height:1;
+}
+
+.mobile-brand .velrion{
+font-size:18px;
+font-family:"Goudy Old Style",serif;
+font-weight:bold;
+color:#fff;
+letter-spacing:1px;
+}
+
+.mobile-brand .mart{
+font-size:12px;
+font-family:"Times New Roman",serif;
+font-weight:bold;
+color:#fff;
+}
+
+.mobile-cart img{
+width:28px;
+height:28px;
+}
+
+.mobile-search{
+margin-top:12px;
+background:#fff;
+height:46px;
+border-radius:8px;
+display:flex;
+align-items:center;
+padding:0 12px;
+}
+
+.mobile-search img{
+width:22px;
+height:22px;
+margin-right:10px;
+}
+
+.mobile-search input{
+width:100%;
+border:none;
+outline:none;
+font-size:14px;
+background:none;
+}
+
+/* Hero */
 .hero-section{
-padding:10px 0;
+padding:15px 0;
 }
 
 .hero-slider{
 width:100%;
 height:auto;
+aspect-ratio:16/9;
 border:none;
 }
 
 .slide img{
 width:100%;
-height:auto;
-display:block;
+height:100%;
 object-fit:contain;
 }
 
-/* Categories */
+/* Category */
 .home-categories{
 grid-template-columns:repeat(2,1fr);
 gap:12px;
@@ -572,7 +674,7 @@ gap:12px;
 /* Products */
 .products-grid{
 grid-template-columns:repeat(2,1fr);
-gap:12px;
+gap:15px;
 }
 
 .product-card{
@@ -583,66 +685,55 @@ height:100%;
 
 .product-card img{
 width:100%;
-aspect-ratio:1/1;
-height:auto;
+height:180px;
 object-fit:contain;
-background:#fff;
 }
 
 .product-card h3{
-flex:1;
-font-size:14px;
-margin:10px 0;
+flex-grow:1;
 }
 
 .btn{
 margin-top:auto;
-width:100%;
-text-align:center;
-padding:10px;
 }
 
 /* Footer */
 .footer-grid{
 grid-template-columns:repeat(2,1fr);
-gap:20px;
+gap:25px;
 text-align:left;
 }
 
 .footer-bottom{
 flex-direction:column;
-gap:15px;
 text-align:center;
+gap:15px;
 }
 
 .social-icons{
 justify-content:flex-start;
 }
 
-.payment-icons{
-justify-content:center;
 }
 
-}
-
-/* Small Phones */
+/* Small Mobile */
 
 @media (max-width:480px){
 
-.products-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-.home-categories{
-grid-template-columns:repeat(2,1fr);
-}
-
-.product-card h3{
-font-size:13px;
-}
-
 .hero-slider{
-width:100%;
+aspect-ratio:16/10;
+}
+
+.product-card img{
+height:150px;
+}
+
+.mobile-brand .velrion{
+font-size:16px;
+}
+
+.mobile-brand .mart{
+font-size:11px;
 }
 
 }
