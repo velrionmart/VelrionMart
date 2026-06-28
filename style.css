@@ -526,3 +526,91 @@ border:1px solid #25D366;
 z-index:999;
 }
 
+/* =========================
+   MOBILE HEADER
+========================= */
+
+.mobile-header{
+display:none;
+background:#111;
+padding:10px 12px;
+}
+
+@media (max-width:768px){
+
+.top-bar,
+.main-header{
+display:none;
+}
+
+.mobile-header{
+display:block;
+}
+
+.mobile-top{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.menu-btn{
+background:none;
+border:none;
+padding:0;
+cursor:pointer;
+}
+
+.menu-btn img{
+width:32px;
+height:32px;
+display:block;
+}
+
+.mobile-logo{
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+.mobile-logo img{
+width:38px;
+height:38px;
+object-fit:contain;
+}
+
+.mobile-brand{
+display:flex;
+flex-direction:column;
+line-height:1;
+}
+
+.mobile-cart img{
+width:28px;
+height:28px;
+}
+
+.mobile-search{
+margin-top:10px;
+background:#fff;
+border-radius:8px;
+display:flex;
+align-items:center;
+padding:0 10px;
+height:44px;
+}
+
+.mobile-search img{
+width:20px;
+height:20px;
+margin-right:8px;
+}
+
+.mobile-search input{
+width:100%;
+border:none;
+outline:none;
+font-size:14px;
+background:none;
+}
+
+}
