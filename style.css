@@ -527,90 +527,122 @@ z-index:999;
 }
 
 /* =========================
-   MOBILE HEADER
+   MOBILE RESPONSIVE FIX
 ========================= */
-
-.mobile-header{
-display:none;
-background:#111;
-padding:10px 12px;
-}
 
 @media (max-width:768px){
 
+/* Desktop header hide */
 .top-bar,
 .main-header{
 display:none;
 }
 
+/* Mobile Header */
 .mobile-header{
 display:block;
+background:#111;
+padding:10px 12px;
 }
 
-.mobile-top{
-display:flex;
-align-items:center;
-justify-content:space-between;
+/* HERO */
+.hero-section{
+padding:10px 0;
 }
 
-.menu-btn{
-background:none;
+.hero-slider{
+width:100%;
+height:auto;
 border:none;
-padding:0;
-cursor:pointer;
 }
 
-.menu-btn img{
-width:32px;
-height:32px;
+.slide img{
+width:100%;
+height:auto;
 display:block;
-}
-
-.mobile-logo{
-display:flex;
-align-items:center;
-gap:8px;
-}
-
-.mobile-logo img{
-width:38px;
-height:38px;
 object-fit:contain;
 }
 
-.mobile-brand{
+/* Categories */
+.home-categories{
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
+
+/* Products */
+.products-grid{
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+}
+
+.product-card{
 display:flex;
 flex-direction:column;
-line-height:1;
+height:100%;
 }
 
-.mobile-cart img{
-width:28px;
-height:28px;
-}
-
-.mobile-search{
-margin-top:10px;
-background:#fff;
-border-radius:8px;
-display:flex;
-align-items:center;
-padding:0 10px;
-height:44px;
-}
-
-.mobile-search img{
-width:20px;
-height:20px;
-margin-right:8px;
-}
-
-.mobile-search input{
+.product-card img{
 width:100%;
-border:none;
-outline:none;
+aspect-ratio:1/1;
+height:auto;
+object-fit:contain;
+background:#fff;
+}
+
+.product-card h3{
+flex:1;
 font-size:14px;
-background:none;
+margin:10px 0;
+}
+
+.btn{
+margin-top:auto;
+width:100%;
+text-align:center;
+padding:10px;
+}
+
+/* Footer */
+.footer-grid{
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+text-align:left;
+}
+
+.footer-bottom{
+flex-direction:column;
+gap:15px;
+text-align:center;
+}
+
+.social-icons{
+justify-content:flex-start;
+}
+
+.payment-icons{
+justify-content:center;
+}
+
+}
+
+/* Small Phones */
+
+@media (max-width:480px){
+
+.products-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.home-categories{
+grid-template-columns:repeat(2,1fr);
+}
+
+.product-card h3{
+font-size:13px;
+}
+
+.hero-slider{
+width:100%;
 }
 
 }
