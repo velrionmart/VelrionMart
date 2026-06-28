@@ -527,149 +527,96 @@ z-index:999;
 }
 
 /* =========================
-   MOBILE
+   MOBILE RESPONSIVE
 ========================= */
 
-@media(max-width:992px){
-
-.main-header{
-padding:0 20px;
-}
-
-.products-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-.footer-grid{
-grid-template-columns:repeat(2,1fr);
-}
-
-.home-categories{
-grid-template-columns:repeat(2,1fr);
-}
-
-.hero-slider{
-height:400px;
-}
-
-}
-
-@media(max-width:768px){
-
-.top-bar,
-.main-header{
-display:none;
-}
-
-.mobile-header{
-display:block;
-}
-
-.hero-slider{
-width:95%;
-height:300px;
-}
-
-.products-grid{
-grid-template-columns:1fr;
-}
-
-.home-categories{
-grid-template-columns:1fr;
-}
-
-.footer-grid{
-grid-template-columns:1fr;
-text-align:center;
-}
-
-}
-
-@media(max-width:480px){
-
-.hero-slider{
-height:250px;
-}
-
-.home-category-section h2,
-.featured-products h2,
-.faq-section h2{
-font-size:20px;
-}
-
-.product-card img{
-height:220px;
-}
-
-}
-
-/* =========================
-   MOBILE HEADER
-========================= */
-
+/* Mobile Header */
 .mobile-header{
 display:none;
-background:#000000;
-padding:12px;
+background:#111;
+padding:10px 12px;
+border-bottom:1px solid #222;
 }
 
 .mobile-top{
 display:flex;
-justify-content:space-between;
 align-items:center;
+justify-content:space-between;
+gap:10px;
 }
 
 .mobile-menu{
-font-size:34px;
-color:#ffffff;
+font-size:28px;
+color:#fff;
+cursor:pointer;
 }
 
 .mobile-logo{
 display:flex;
 align-items:center;
-gap:10px;
+gap:8px;
 }
 
 .mobile-logo img{
-width:42px;
-height:42px;
+width:36px;
+height:36px;
 object-fit:contain;
 }
 
 .mobile-brand{
 display:flex;
-align-items:center;
-gap:5px;
+flex-direction:column;
+line-height:1;
 }
 
 .mobile-cart img{
-width:30px;
-height:30px;
+width:24px;
+height:24px;
 object-fit:contain;
 }
 
 .mobile-search{
-margin-top:12px;
-height:50px;
-background:#ffffff;
-border-radius:8px;
+margin-top:10px;
 display:flex;
 align-items:center;
-padding:0 12px;
+background:#fff;
+border-radius:6px;
+padding:0 10px;
+height:42px;
 }
 
 .mobile-search img{
-width:28px;
-height:28px;
-margin-right:10px;
-object-fit:contain;
+width:20px;
+height:20px;
+margin-right:8px;
 }
 
 .mobile-search input{
 width:100%;
 border:none;
 outline:none;
-font-size:15px;
-background:none;
+font-size:14px;
+background:transparent;
 }
 
+/* Tablet */
+@media(max-width:992px){
+
+.products-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+.home-categories{
+grid-template-columns:repeat(2,1fr);
+}
+
+.footer-grid{
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+}
+
+.hero-slider{
+height:420px;
+}
+
+}
