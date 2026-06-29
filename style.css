@@ -581,16 +581,23 @@ align-items:center;
 }
 
 .mobile-menu{
+width:32px;
+height:32px;
 display:flex;
 align-items:center;
 justify-content:center;
+flex-shrink:0;
+overflow:hidden;
 }
 
 .mobile-menu img{
-width:28px;
-height:28px;
-display:block;
+width:24px !important;
+height:24px !important;
+max-width:24px !important;
+max-height:24px !important;
 object-fit:contain;
+background:transparent !important;
+display:block;
 }
 
 .mobile-logo{
