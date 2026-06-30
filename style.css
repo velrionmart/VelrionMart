@@ -753,3 +753,153 @@ font-size:11px;
 }
 
 }
+
+/* =====================================
+   MOBILE SIDE MENU
+===================================== */
+
+.menu-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.45);
+opacity:0;
+visibility:hidden;
+transition:.30s;
+z-index:9998;
+}
+
+.menu-overlay.active{
+opacity:1;
+visibility:visible;
+}
+
+.side-menu{
+position:fixed;
+top:0;
+left:-360px;
+width:340px;
+max-width:88%;
+height:100%;
+background:#ffffff;
+overflow-y:auto;
+transition:left .35s ease;
+z-index:9999;
+box-shadow:4px 0 25px rgba(0,0,0,.18);
+}
+
+.side-menu.active{
+left:0;
+}
+
+.menu-header{
+position:relative;
+padding:25px 20px;
+background:#ffffff;
+border-bottom:1px solid #ececec;
+}
+
+.close-menu{
+position:absolute;
+top:18px;
+right:18px;
+width:38px;
+height:38px;
+border:none;
+background:none;
+font-size:24px;
+cursor:pointer;
+color:#111;
+}
+
+.guest-box h2{
+font-size:26px;
+font-weight:700;
+color:#111;
+margin-bottom:18px;
+font-family:Arial,sans-serif;
+}
+
+.login-btn{
+display:inline-block;
+padding:12px 24px;
+background:#111;
+color:#fff;
+font-size:15px;
+font-weight:600;
+border-radius:8px;
+transition:.25s;
+}
+
+.login-btn:hover{
+background:#333;
+}
+
+.menu-links{
+padding:8px 0;
+}
+
+.menu-links a{
+display:block;
+padding:16px 22px;
+font-size:16px;
+font-weight:500;
+color:#111;
+border-bottom:1px solid #f1f1f1;
+transition:.25s;
+}
+
+.menu-links a:hover{
+background:#f8f8f8;
+padding-left:30px;
+}
+
+.our-promise{
+padding:25px 20px;
+border-top:8px solid #f5f5f5;
+background:#fff;
+}
+
+.our-promise h3{
+font-size:18px;
+font-weight:700;
+margin-bottom:20px;
+color:#111;
+}
+
+.promise-items{
+display:flex;
+justify-content:space-between;
+gap:10px;
+text-align:center;
+}
+
+.promise-items div{
+flex:1;
+display:flex;
+flex-direction:column;
+align-items:center;
+font-size:32px;
+}
+
+.promise-items span{
+margin-top:10px;
+font-size:13px;
+font-weight:600;
+line-height:1.4;
+color:#111;
+}
+
+.menu-brand-card{
+padding:20px;
+background:#fafafa;
+border-top:1px solid #ececec;
+}
+
+.menu-brand-card img{
+display:block;
+width:100%;
+border-radius:10px;
+}
