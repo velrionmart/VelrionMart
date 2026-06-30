@@ -785,6 +785,7 @@ max-width:88%;
 height:100%;
 background:#ffffff;
 overflow-y:auto;
+-webkit-overflow-scrolling:touch;
 transition:left .35s ease;
 z-index:9999;
 box-shadow:4px 0 25px rgba(0,0,0,.18);
@@ -812,6 +813,12 @@ background:none;
 font-size:24px;
 cursor:pointer;
 color:#111;
+border-radius:50%;
+transition:.25s;
+}
+
+.close-menu:hover{
+background:#f2f2f2;
 }
 
 .guest-box h2{
@@ -831,6 +838,8 @@ font-size:15px;
 font-weight:600;
 border-radius:8px;
 transition:.25s;
+text-decoration:none;
+text-align:center;
 }
 
 .login-btn:hover{
@@ -849,6 +858,7 @@ font-weight:500;
 color:#111;
 border-bottom:1px solid #f1f1f1;
 transition:.25s;
+text-decoration:none;
 }
 
 .menu-links a:hover{
@@ -902,4 +912,10 @@ border-top:1px solid #ececec;
 display:block;
 width:100%;
 border-radius:10px;
+}
+
+/* Prevent background scrolling when menu is open */
+
+body.menu-open{
+overflow:hidden;
 }
