@@ -2165,7 +2165,7 @@ RELATED PRODUCTS
 
 @media (max-width:650px){
 
-    .products-grid{
+    .related-products .products-grid{
 
         grid-template-columns:1fr;
 
@@ -2174,6 +2174,10 @@ RELATED PRODUCTS
     .related-products h2{
 
         font-size:24px;
+
+    }
+
+}
 
 /* =====================================================
 FINAL COMPONENTS
