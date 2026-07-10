@@ -2050,11 +2050,11 @@ RELATED PRODUCTS
 
 /* ---------- PRODUCT IMAGE ---------- */
 
-.product-card img{
+.related-products .product-card img{
 
     width:100%;
     aspect-ratio:1/1;
-    object-fit:cover;
+    object-fit:contain;
     display:block;
     background:#f8f8f8;
 
