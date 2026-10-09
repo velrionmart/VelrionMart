@@ -560,10 +560,33 @@ gap:35px;
 /* Mobile */
 @media (max-width:768px){
 
-/* Desktop Header Hide */
-.top-bar,
+/* Hide desktop main header on mobile */
 .main-header{
-display:none;
+    display:none;
+}
+
+/* Keep navigation hidden only when mobile header exists */
+.mobile-header ~ .top-bar{
+    display:none;
+}
+
+/* Responsive navigation for pages without mobile header */
+.top-bar{
+    height:auto;
+    min-height:38px;
+    padding:8px 12px;
+    justify-content:center;
+}
+
+.top-nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:8px 16px;
+}
+
+.top-nav a{
+    font-size:12px;
 }
 
 /* Mobile Header Show */
