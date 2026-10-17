@@ -2408,6 +2408,155 @@ FINAL COMPONENTS
 
 }
 
+/* ==========================================
+   VELRION MART - SHOP PAGE MOBILE FIX
+   Desktop and other pages remain unchanged
+========================================== */
 
+@media (max-width: 768px) {
+
+    body.shop-page .home-category-section {
+        padding: 28px 12px;
+    }
+
+    body.shop-page .home-category-section h2 {
+        font-size: 21px;
+        margin-bottom: 18px;
+    }
+
+    body.shop-page .home-categories {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    body.shop-page .category-card {
+        padding: 12px 8px;
+        font-size: 12px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    body.shop-page .featured-products {
+        padding: 28px 12px 10px;
+    }
+
+    body.shop-page .featured-products h2 {
+        font-size: 21px;
+        margin-bottom: 12px;
+    }
+
+    body.shop-page .products-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    body.shop-page .product-card {
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        padding: 8px;
+        height: 100%;
+        background: #fff;
+        border: 1px solid #e5e5e5;
+        border-radius: 0;
+        box-shadow: none;
+        transform: none;
+        overflow: hidden;
+    }
+
+    body.shop-page .product-card img {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+        border: 1px solid #e5e5e5;
+        background: #fff;
+    }
+
+    body.shop-page .product-card h3 {
+        padding: 0;
+        margin: 9px 0;
+        min-height: 0;
+        flex-grow: 1;
+        font-size: 13px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+    }
+
+    body.shop-page .product-card .sale-price {
+        margin: 3px 0;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.4;
+    }
+
+    body.shop-page .product-card .old-price {
+        margin: 2px 0;
+        color: #777;
+        font-size: 12px;
+        text-decoration: line-through;
+    }
+
+    body.shop-page .product-card .discount {
+        margin: 3px 0;
+        color: #333;
+        font-size: 12px;
+    }
+
+    body.shop-page .product-card .btn {
+        display: block;
+        width: 100%;
+        min-height: 36px;
+        box-sizing: border-box;
+        padding: 8px 4px;
+        margin-top: 6px;
+        border-radius: 0;
+        font-size: 11px;
+        line-height: 1.35;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    body.shop-page .product-card .btn.view {
+        background: #fff;
+        color: #111;
+        border: 1px solid #111;
+    }
+
+    body.shop-page .product-card .btn.cart {
+        background: #111;
+        color: #fff;
+        border: 1px solid #111;
+    }
+}
+
+/* Extra-small phones */
+
+@media (max-width: 380px) {
+
+    body.shop-page .products-grid {
+        gap: 8px;
+        padding: 8px;
+    }
+
+    body.shop-page .product-card {
+        padding: 6px;
+    }
+
+    body.shop-page .product-card h3 {
+        font-size: 12px;
+    }
+
+    body.shop-page .product-card .btn {
+        font-size: 10px;
+    }
+}
 
 
