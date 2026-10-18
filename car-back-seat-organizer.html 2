@@ -1,1 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Back Seat Organizer | Velrion Mart</title>
+</head>
+<body>
 
+<!-- MOBILE HEADER -->
+
+<div class="mobile-header">
+
+    <div class="mobile-top">
+
+<button class="menu-btn" id="menuBtn">
+    ☰
+</button>
+
+        <div class="mobile-logo">
+
+            <img src="logo.png" alt="Logo">
+
+            <div class="mobile-brand">
+                <span class="velrion">VELRION</span>
+                <span class="mart">MART</span>
+            </div>
+
+        </div>
+
+        <a href="cart.html" class="mobile-header-cart">
+            <img src="cart-icon.png" alt="Cart">
+        </a>
+
+    </div>
+
+    <div class="mobile-search">
+
+        <img src="search icon.png" alt="Search">
+
+        <input
+        type="text"
+        placeholder="Search for Products, Brands, Categories">
+
+    </div>
+
+</div>
+
+<!-- MOBILE SIDE MENU -->
+
+<div class="menu-overlay" id="menuOverlay"></div>
+
+<div class="side-menu" id="sideMenu">
+
+    <div class="menu-header">
+
+        <button class="close-menu" id="closeMenu">
+            ✕
+        </button>
+
+        <div class="guest-box">
+
+            <h2>Hello, Guest</h2>
+
+            <a href="login.html" class="login-btn">
+                Login / Sign Up
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="menu-links">
+
+        <a href="index.html">🏠 Home</a>
+
+        <a href="shop.html">🛍 Shop</a>
+
+        <a href="tracking.html">📦 Track Order</a>
+
+        <a href="contact.html">📞 Contact Us</a>
+
+        <a href="about.html">ℹ About Us</a>
+
+        <a href="refund-policy.html">
+            Cancellation, Return & Refund Policy
+        </a>
+
+        <a href="privacy-policy.html">
+            Privacy Policy
+        </a>
+
+        <a href="terms.html">
+            Terms & Conditions
+        </a>
+
+    </div>
+
+    <div class="our-promise">
+
+        <h3>OUR PROMISE</h3>
+
+        <div class="promise-items">
+
+            <div>
+                🚚
+                <span>Fast Delivery</span>
+            </div>
+
+            <div>
+                🔒
+                <span>Secure Payment</span>
+            </div>
+
+            <div>
+                ⭐
+                <span>Quality Products</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="menu-brand-card">
+
+        <img src="menu-bottom-logo.png" alt="Velrion Mart">
+
+    </div>
+
+</div>       
+    
+<!-- TOP BAR -->
+
+<div class="top-bar">
+
+<nav class="top-nav">
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="tracking.html">Track order</a>
+<a href="contact.html">Contact</a>
+<a href="login.html">Login/sign up</a>
+</nav>
+
+</div>
+
+<!-- HEADER -->
+
+<header class="main-header">
+
+
+<div class="logo-area">
+
+    <img src="logo.png" alt="Velrion Mart Logo">
+
+    <div class="brand-name">
+        <span class="velrion">VELRION</span>
+        <span class="mart">MART</span>
+    </div>
+
+</div>
+
+<div class="header-links">
+<a href="#">Categories ▼</a>
+<a href="#">Brands ▼</a>
+</div>
+
+<div class="search-box">
+
+<img src="search icon.png" class="search-icon" alt="Search">
+
+<input type="text" placeholder="Search for Products, Brands, Categories">
+
+</div>
+
+<div class="header-icons">
+
+  <a href="notification.html">
+    <img src="notification-icon.png" alt="Notification">
+  </a>
+
+  <a href="wishlist.html">
+    <img src="heart-icon.png" alt="Wishlist">
+  </a>
+
+  <a href="cart.html">
+    <img src="cart-icon.png" alt="Cart">
+  </a>
+
+</div>
+
+</header>
