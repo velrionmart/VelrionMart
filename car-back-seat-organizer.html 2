@@ -342,5 +342,14 @@
 
 <!-- PRODUCT PAGE END -->
 
+<!-- PRODUCT BREADCRUMB -->
+<nav class="vm-breadcrumb">
+    <a href="index.html">Home</a>
+    <span>/</span>
+    <a href="shop.html">Car Accessories</a>
+    <span>/</span>
+    <span>Car Back Seat Organizer</span>
+</nav>
+
 
 
