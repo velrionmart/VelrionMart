@@ -522,6 +522,74 @@
     </div>
 </section>
 
+<footer>
+
+<div class="footer-grid">
+
+<div>
+<h3>COMPANY</h3>
+<a href="about.html">About Us</a>
+<a href="#">Media</a>
+<a href="contact.html">Contact Us</a>
+</div>
+
+<div>
+<h3>POLICIES</h3>
+<a href="refund-policy.html">Cancellation, Return & Refund Policy</a>
+<a href="terms.html">T&C of Sale</a>
+<a href="#">FAQ's</a>
+<a href="#">Fees & Payments Policy</a>
+<a href="privacy-policy.html">Privacy Policy</a>
+<a href="#">Terms of Use</a>
+</div>
+
+<div>
+<h3>INFORMATION</h3>
+<a href="tracking.html">Track Order</a>
+<a href="#">Bulk Purchase Enquiry</a>
+</div>
+
+<div>
+<h3>HAVE A QUESTION?</h3>
+
+<input type="text" placeholder="Enter your question">
+
+<button>Proceed</button>
+
+<div class="social-icons">
+
+<a href="#"><img src="facebook.png" alt="Facebook"></a>
+
+<a href="#"><img src="Instagram.png" alt="Instagram"></a>
+
+<a href="#"><img src="youtube.png" alt="YouTube"></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<div>
+© 2026 Velrion Mart | All Rights Reserved
+</div>
+
+<div class="payment-icons">
+
+<img src="ssl-secure.png" alt="SSL Secure">
+
+<img src="secure-payment.png" alt="Secure Payment">
+
+<img src="payment-methods.png" alt="Payment Methods">
+
+</div>
+
+</div>
+
+</footer>
+
 
 
 
